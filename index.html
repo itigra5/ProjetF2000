@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=IM+Fell+DW+Pica+SC&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Pinyon+Script&display=swap" rel="stylesheet">
     <title>Enigmes...</title>
 </head>
 <body>
-    <h1>Bravo l'équipage ! !</h1>
-    <P>Mais vous avez été bien trop rapides...revenez vendredi (matin) pour le reste de l'enigme...</P>
+    <h1 class="pinyon-script-regular" >Bravo l'équipage ! !</h1>
+    <div id ="intro">
+        <p id="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <button id="expandButton" onclick="expandText()">Je veux savoir plus !</button>
+    </div>
+
+    <div class="questionSection">
+        <label for="reponse1">Quel est le nom du bateau de l'équipage ?</label><br>
+        <input type="text" id="reponse1" name="reponse1" placeholder="Entrez votre réponse ici">
+    </div>
+    <div class="questionSection">
+        <label for="reponse2">Quel est le nom du bateau de l'équipage ?</label><br>
+        <input type="text" id="reponse2" name="reponse2" placeholder="Entrez votre réponse ici">
+    </div>
+
+    <button id="submitAnswers" onclick="submitAnswers()">Corriger</button>
+
+    <p id="PS" class="pinyon-script-regular">Toutes les réponses doivent être correcte chez au moins une personne pour que la suite vous soit envoyé. Duré de l'envoie : environ une semaine. <br> Bonne chance mousaillon !</p>
+<script src="index.js"></script>
 </body>
 </html>

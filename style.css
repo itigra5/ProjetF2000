@@ -1,0 +1,55 @@
+.pinyon-script-regular {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 700;
+  font-size: 1rem;
+  font-style: normal;
+}
+ 
+
+.im-fell-dw-pica-sc-regular {
+  font-family: "IM Fell DW Pica SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
+    font-family: "IM Fell DW Pica SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 29px;
+    font-style: normal;
+    color: rgb(44, 25, 0);
+}
+body{
+    margin: 15px;
+    background-color: rgb(201, 187, 169);
+    background-image: url("00da97724d1d1bda8f8325701b58d3cf.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1.pinyon-script-regular {
+    font-size: 2rem;
+}
+
+button{
+    background-color: rgb(170, 138, 97);
+    border: 3px solid rgb(129, 94, 49);
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.questionSection{
+    margin: 20px 0px;
+}
+
+.questionSection input {
+    border-radius: 10px;
+    margin: 10px 10px;
+    border: 0px solid rgb(129, 94, 49);
+    box-shadow: 1px 1px 5px 1.6px rgb(129, 94, 49);
+    background-color: rgb(226, 215, 200);
+    padding: 5px 10px;
+}
