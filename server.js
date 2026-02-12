@@ -5,8 +5,15 @@ const PORT = process.env.PORT || 3000;
 // Pour lire le corps des POST
 app.use(express.json());
 
-// Sert tout ce qu'il y a dans public
-app.use(express.static("public"));
+// Pour que Express s'occupe du front end (de chat GPT)
+
+// Servir les fichiers statiques de React
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Rediriger toutes les requêtes vers index.html
+app.get(/.*/, (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 // Route pour recevoir les messages du front
 app.post("/log", (req, res) => {
