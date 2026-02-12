@@ -7,7 +7,21 @@ function expandText() {
   expandButton.style.display = 'none';
 }
 
+const ENV = {
+    code: "ILS ONT REUSSIENT !!"
+};
 
+const bonnesReponses = [
+  "Rick Astley",
+  "secret",
+  "sous-marins",
+  "Sniper",
+  "Juliette",
+  "magnésie",
+  "mur",
+  "Für Elise",
+  "navire"
+];
 
 
 function submitAnswers() {
