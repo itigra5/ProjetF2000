@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=IM+Fell+DW+Pica+SC&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <script src="./env.js"></script> <!-- Lien vers le fichier .env.js -->
+    <title>Enigmes...</title>
+</head>
+<body>
+    <h1 class="pinyon-script-regular" >Bravo l'équipage ! !</h1>
+    <div id ="intro">
+        <p id="description">Cupidon ne voulu me laisser assez de temps pour une vrai explication, mais cette impressionante technologie me donne l'espace d'aprofondir.
+        Sachez qu'un traitre se terre parmis vous, subtile, si vous ne le retrouvez pas il s'emparera de notre précieux trésor et n'en laissera pas une miette ! 
+        </p>
+        <button id="expandButton" onclick="expandText()">Je veux savoir plus !</button>
+    </div>
+
+    <h2>Questions :</h2>
+    <b>Ne mettez pas de determinants</b>
+    <div class="questionSection">
+        <label for="reponse1">lctcp emlly egtc wms sn -</label><br>
+        <input type="text" id="reponse1" name="reponse1" placeholder="Entrez votre réponse ici">
+    </div>
+    <div class="questionSection">
+        <label for="reponse2">Plus j'ai de gardiens, moins je suis gardé. Qui suis-je ?</label><br>
+        <input type="text" id="reponse2" name="reponse2" placeholder="Entrez votre réponse ici">
+    </div>
+    <div class="questionSection">
+        <label for="reponse3">Quelle est la monnaie des poissons ?</label><br>
+        <input type="text" id="reponse3" name="reponse3" placeholder="Entrez votre réponse ici">
+    </div>
+    <div class="questionSection">
+        <label for="reponse4">Quel est le plus grand océan ?</label><br>
+        <input type="text" id="reponse4" name="reponse4" placeholder="Entrez votre réponse ici">
+    </div>
+    <div class="questionSection">
+        <label for="reponse5"><img id="bon" src="bonhomme_loupe.avif" alt="INSPECTEZ !!"></label><br>
+        <input type="text" id="reponse5" name="reponse5" placeholder="Entrez votre réponse ici">
+    </div>
+    <div class="questionSection">
+        <label for="reponse6">Je suis la beautée</label><br>
+        <input type="text" id="reponse6" name="reponse6" placeholder="Entrez votre réponse ici">
+    </div>
+    <div class="questionSection">
+        <label for="reponse7">MgCO3</label><br>
+        <input type="text" id="reponse7" name="reponse7" placeholder="Entrez votre réponse ici">
+    </div>
+    <div class="questionSection">
+        <label for="reponse8">Qu'est-ce qui fait le tour d'une maison sans bouger ?</label><br>
+        <input type="text" id="reponse8" name="reponse8" placeholder="Entrez votre réponse ici">
+    </div>
+    <div class="questionSection">
+        <label for="reponse9"><img src="Partition.png" alt="la réponse est Sniper"></label><br>
+        <input type="text" id="reponse9" name="reponse9" placeholder="Entrez votre réponse ici">
+    </div>
+    <div class="questionSection">
+        <label for="reponse10">Ktjxaato tcigtg cpkxgt</label><br>
+        <input type="text" id="reponse10" name="reponse10" placeholder="Entrez votre réponse ici">
+    </div>
+    
+
+    <button id="submitAnswers" onclick="submitAnswers()">Vérifier</button>
+
+    <p id="PS" class="pinyon-script-regular">Toutes les réponses doivent être correctes chez au moins une personne pour que la suite vous soit envoyée. Durée de l’envoi : environ une semaine. <br> Bonne chance, moussaillon !</p>
+<script src="index.js"></script>
+</body>
+</html>
