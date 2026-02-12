@@ -1,0 +1,12 @@
+# Ignorer le dossier node_modules
+node_modules/
+
+# Ignorer le fichier .env
+.env
+.env.js
+
+# Ignorer les fichiers de log
+*.log
+
+# Ignorer les fichiers de configuration de l'IDE
+.vscode/
