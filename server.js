@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
+const path = require('path');
 
 // Pour lire le corps des POST
 app.use(express.json());
