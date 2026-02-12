@@ -13,7 +13,8 @@ function expandText() {
 function submitAnswers() {
   let toutTrue = true; 
   let compteFalse = 0;
-  for (let i = 1; i<=9; i++) {
+
+  for (let i = 1; i <= 9; i++) {
     const userInput = document.getElementById(`reponse${i}`);
     const valeur = userInput.value.trim().toLowerCase();
     const bonne = bonnesReponses[i - 1].toLowerCase();
@@ -22,23 +23,27 @@ function submitAnswers() {
       compteFalse++;
     }
   }
+
   if (toutTrue) {
-    alert("Bravo, toutes les réponses sont correctes, envoie de la lettre...")
-        // Envoi à ton backend au lieu de console.log
+    alert("Bravo, toutes les réponses sont correctes, envoie de la lettre...");
+
+    // Envoi au backend
     fetch("/log", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message: ENV.code })
     });
+
     if (document.getElementById(`reponse3`).value.trim().toLowerCase() === "secret") {
       fetch("/log", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: "Tout va bien, c'est un test : " + ENV.code })
       });
-
     }
-  else {
+
+  } else {
+    // ← ce else correspond à if(toutTrue)
     alert(`${compteFalse} réponses sont incorrectes.`);
   }
-}}
+}
