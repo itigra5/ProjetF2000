@@ -9,11 +9,11 @@ app.use(express.json());
 // Pour que Express s'occupe du front end (de chat GPT)
 
 // Servir les fichiers statiques de React
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'dist')));
 
 // Rediriger toutes les requêtes vers index.html
 app.get(/.*/, (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
 // Route pour recevoir les messages du front
