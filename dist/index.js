@@ -27,7 +27,7 @@ const bonnesReponses = [
 
 function submitAnswers() {
   let toutTrue = true; 
-  let compteFalse = 1;
+  let compteFalse = 0;
 
   for (let i = 1; i <= 10; i++) {
     const userInput = document.getElementById(`reponse${i}`);
