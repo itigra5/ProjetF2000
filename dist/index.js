@@ -15,7 +15,7 @@ const bonnesReponses = [
   "Rick Astley",
   "secret",
   "sous-marins",
-  "Pacifique ",
+  "pacifique",
   "Sniper",
   "Juliette",
   "magnésie",
