@@ -27,7 +27,7 @@ const bonnesReponses = [
 
 function submitAnswers() {
   let toutTrue = true; 
-  let compteFalse = 0;
+  let compteFalse = 1;
 
   for (let i = 1; i <= 10; i++) {
     const userInput = document.getElementById(`reponse${i}`);
@@ -49,16 +49,7 @@ function submitAnswers() {
       body: JSON.stringify({ message: ENV.code })
     });
   }
-    if (document.getElementById(`reponse3`).value.trim().toLowerCase() === "secret") {
-      fetch("/log", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: "Tout va bien, c'est un test : " + ENV.code })
-      });
-    }
-
  else {
-    // ← ce else correspond à if(toutTrue)
     alert(`${compteFalse} réponses sont incorrectes.`);
   }
 }
